@@ -97,7 +97,7 @@ npm run build
 
 ## Funcionalidades
 
-[A DEFINIR]]
+[A DEFINIR]
 
 ---
 
