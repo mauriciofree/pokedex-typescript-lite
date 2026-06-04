@@ -4,6 +4,9 @@
   "description": "GitHub: https://github.com/mauriciofree/pokedex-typescript-lite",
   "main": "index.js",
   "scripts": {
+    "dev":"npx tsc src/main.js",
+    "build":"tsc",
+    "start":"node src/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
