@@ -1,1 +1,14 @@
-/node_modules
+# Dependências
+node_modules/
+
+# Build
+dist/
+
+# Logs
+*.log
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+*.tsbuildinfo
