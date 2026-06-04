@@ -75,7 +75,6 @@ Instale as dependências:
 
 ```bash
 npm install
-```
 
 ---
 
@@ -111,17 +110,20 @@ npm run build
 src/
 ├── main.ts
 ├── controllers/
+│   └── TerminalController.ts
 ├── services/
+│   ├── PokeApiService.ts
+│   └── BoxService.ts
 ├── models/
-└── utils/
-
-pc_box.json
-package.json
-tsconfig.json
-README.md
+│   ├── Pokemon.ts
+│   └── CustomErrors.ts 
+├── utils/
+|   └── textFormatters.ts
+├── pc_box.json
+├── tsconfig.json
+├── package.json
+└── README.md
 ```
-
----
 
 ## Explicação dos Arquivos
 
@@ -171,7 +173,6 @@ https://trello.com/b/Jc1GFqR2/pok%C3%A9dex-typescript-lite
 ### Principais Tarefas
 
 - Criar repositório no GitHub
-- Criar README.md
 - Configurar projeto Node com TypeScript
 - Criar package.json
 - Criar tsconfig.json
@@ -228,3 +229,35 @@ docs: atualiza readme com instrucoes
 - Filtrar Pokémon por tipo
 - Implementar testes automatizados
 - Criar API REST utilizando Express
+
+## Checklist final de entrega Antes de enviar no AVA, confira:
+
+[x] Criei o repositório público no GitHub
+[ ] Configurei o projeto Node.js com TypeScript
+[ ] Criei o package.json
+[ ] Criei o tsconfig.json
+[ ] Criei o arquivo src/main.ts
+[ ] Criei uma interface ou type para PokemonResumo
+[ ] Criei uma interface simples para a resposta da PokeAPI
+[ ] Criei função assíncrona para buscar Pokémon
+[ ] Usei fetch
+[ ] Usei async/await
+[ ] Usei try/catch
+[ ] Tratei erro de Pokémon inexistente
+[ ] Transformei o retorno da API em objeto simples
+[ ] Criei catálogo local em array ou classe
+[ ] Criei função ou método para adicionar Pokémon
+[ ] Impedi Pokémon duplicado
+[ ] Criei função ou método para listar catálogo
+[ ] Criei função ou método para remover Pokémon por ID
+[ ] Usei pelo menos 3 métodos de array
+[ ] Exibi mensagens claras no terminal
+[ ] Testei o fluxo no main.ts
+[ ] Atualizei o README.md
+[ ] Incluí exemplos de execução no README
+[ ] Criei quadro Kanban ou planejamento equivalente
+[ ] Fiz commits no GitHub
+[ ] Usei branches mínimas
+[ ] Enviei o link do GitHub no AVA
+[ ] Enviei o link do Kanban no AVA
+[ ] Não deixei vídeo como item obrigatório
