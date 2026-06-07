@@ -233,18 +233,18 @@ docs: atualiza readme com instrucoes
 ## Checklist final de entrega Antes de enviar no AVA, confira:
 
 [x] Criei o repositório público no GitHub
-[ ] Configurei o projeto Node.js com TypeScript
-[ ] Criei o package.json
-[ ] Criei o tsconfig.json
-[ ] Criei o arquivo src/main.ts
-[ ] Criei uma interface ou type para PokemonResumo
-[ ] Criei uma interface simples para a resposta da PokeAPI
-[ ] Criei função assíncrona para buscar Pokémon
-[ ] Usei fetch
-[ ] Usei async/await
-[ ] Usei try/catch
-[ ] Tratei erro de Pokémon inexistente
-[ ] Transformei o retorno da API em objeto simples
+[X] Configurei o projeto Node.js com TypeScript
+[X] Criei o package.json
+[X] Criei o tsconfig.json
+[x] Criei o arquivo src/main.ts
+[X] Criei uma interface ou type para PokemonResumo
+[x] Criei uma interface simples para a resposta da PokeAPI
+[x] Criei função assíncrona para buscar Pokémon
+[x] Usei fetch
+[x] Usei async/await
+[x] Usei try/catch
+[x] Tratei erro de Pokémon inexistente
+[x] Transformei o retorno da API em objeto simples
 [ ] Criei catálogo local em array ou classe
 [ ] Criei função ou método para adicionar Pokémon
 [ ] Impedi Pokémon duplicado
@@ -261,3 +261,27 @@ docs: atualiza readme com instrucoes
 [ ] Enviei o link do GitHub no AVA
 [ ] Enviei o link do Kanban no AVA
 [ ] Não deixei vídeo como item obrigatório
+
+## Testes Realizados
+
+Durante o desenvolvimento foram realizados testes para validar as principais funcionalidades da aplicação.
+
+### Busca válida
+
+Entrada testada:
+
+```text
+pikachu
+```
+
+Saída obtida:
+
+```text
+{ id: 25, nome: 'pikachu', tipos: [ 'electric' ], altura: 4, peso: 60 }
+```
+
+Resultado esperado: ✅
+
+O Pokémon foi encontrado na PokeAPI e seus dados foram convertidos para o formato simplificado da aplicação.
+
+---
