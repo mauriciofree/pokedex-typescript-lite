@@ -316,8 +316,8 @@ docs: atualiza readme com instrucoes
 [x] Criei função ou método para adicionar Pokémon
 [x] Impedi Pokémon duplicado
 [x] Criei função ou método para listar catálogo
-[ ] Criei função ou método para remover Pokémon por ID
-[ ] Usei pelo menos 3 métodos de array
+[x] Criei função ou método para remover Pokémon por ID
+[x] Usei pelo menos 3 métodos de array
 [ ] Exibi mensagens claras no terminal
 [ ] Testei o fluxo no main.ts
 [ ] Atualizei o README.md
