@@ -495,6 +495,8 @@ Resultado esperado: ✅
 
 O Pokémon foi removido corretamente do catálogo.
 
+---
+
 ### Remoção de Pokémon inexistente
 
 Entrada testada:
@@ -512,3 +514,109 @@ Saída obtida:
 Resultado esperado: ✅
 
 A aplicação verificou corretamente que o Pokémon não existia no catálogo e manteve os dados já cadastrados.
+
+---
+
+## Teste Completo do Fluxo Principal
+
+O arquivo `main.ts` executa um fluxo completo para demonstrar as principais funcionalidades da aplicação.
+
+### Código testado
+
+```ts
+const catalogo = new CatalogoPokemon();
+
+catalogo.listar();
+
+const pikachu = await buscarPokemon("pikachu");
+if (pikachu) {
+  catalogo.adicionar(pikachu);
+}
+
+catalogo.listar();
+
+const charmander = await buscarPokemon("charmander");
+if (charmander) {
+  catalogo.adicionar(charmander);
+}
+
+const pikachuDuplicado = await buscarPokemon("pikachu");
+if (pikachuDuplicado !== null) {
+  catalogo.adicionar(pikachuDuplicado);
+}
+
+const inexistente = await buscarPokemon("pokemon-inexistente");
+if (inexistente) {
+  catalogo.adicionar(inexistente);
+}
+
+catalogo.listar();
+
+catalogo.remover(25);
+catalogo.listar();
+
+catalogo.remover(9999);
+catalogo.listar();
+```
+
+### Explicação do fluxo
+
+1. Cria uma nova instância da classe `CatalogoPokemon`.
+2. Lista o catálogo vazio.
+3. Busca o Pokémon `pikachu` na PokeAPI.
+4. Adiciona `pikachu` ao catálogo.
+5. Lista o catálogo com `pikachu`.
+6. Busca o Pokémon `charmander`.
+7. Adiciona `charmander` ao catálogo.
+8. Busca `pikachu` novamente.
+9. Tenta adicionar `pikachu` pela segunda vez.
+10. Busca um Pokémon inexistente.
+11. Lista o catálogo atual.
+12. Remove o Pokémon com ID `25`.
+13. Lista o catálogo após a remoção.
+14. Tenta remover um Pokémon com ID inexistente.
+15. Lista o catálogo final.
+
+### Saída esperada
+
+```text
+[AVISO] Catálogo vazio.
+
+[OK] Pokémon encontrado: pikachu
+[OK] pikachu adicionado ao catálogo.
+
+#25 - pikachu | Tipos: electric | Altura: 4 | Peso: 60
+
+[OK] Pokémon encontrado: charmander
+[OK] charmander adicionado ao catálogo.
+
+[OK] Pokémon encontrado: pikachu
+[AVISO] pikachu já está no catálogo.
+
+[ERRO] Pokémon não encontrado.
+
+#25 - pikachu | Tipos: electric | Altura: 4 | Peso: 60
+#4 - charmander | Tipos: fire | Altura: 6 | Peso: 85
+
+[OK] Pokémon removido do catálogo.
+
+#4 - charmander | Tipos: fire | Altura: 6 | Peso: 85
+
+[AVISO] Nenhum Pokémon encontrado com esse ID.
+
+#4 - charmander | Tipos: fire | Altura: 6 | Peso: 85
+```
+
+### Resultado
+
+O teste demonstra que a aplicação consegue:
+
+* listar catálogo vazio;
+* buscar Pokémon válido na PokeAPI;
+* adicionar Pokémon ao catálogo;
+* impedir duplicidade;
+* tratar Pokémon inexistente;
+* listar Pokémon cadastrados;
+* remover Pokémon pelo ID;
+* tratar tentativa de remoção de ID inexistente.
+
