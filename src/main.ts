@@ -22,6 +22,7 @@ async function main() {
     // console.log(inexistente);
     catalogo.adicionar(inexistente);
   }
+  catalogo.listar();
 }
 
 main();
