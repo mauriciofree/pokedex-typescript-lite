@@ -153,6 +153,73 @@ Arquivo utilizado para armazenar os Pokémon cadastrados no catálogo local.
 
 ---
 
+## Conceitos Aplicados
+
+### TypeScript
+
+O projeto foi desenvolvido utilizando TypeScript para adicionar tipagem estática ao código. Foram utilizados tipos em parâmetros de funções, retornos tipados, propriedades de objetos, arrays tipados e classes.
+
+Exemplos:
+
+* `nomeOuId: string`
+* `Promise<PokemonResumo | null>`
+* `PokemonResumo[]`
+
+### Interface PokemonResumo
+
+A interface `PokemonResumo` foi criada para representar uma versão simplificada dos dados de um Pokémon utilizados pela aplicação.
+
+Ela contém os seguintes atributos:
+
+* id
+* nome
+* tipos
+* altura
+* peso
+
+Essa interface garante que todos os Pokémon armazenados no catálogo possuam a mesma estrutura.
+
+### Interface PokemonApiResponse
+
+A interface `PokemonApiResponse` foi utilizada para tipar os dados retornados pela PokeAPI. Apenas os campos necessários para a aplicação foram mapeados, evitando o uso excessivo de propriedades não utilizadas.
+
+### Fetch e async/await
+
+A consulta à PokeAPI é realizada através da função `fetch`, utilizando programação assíncrona com `async/await`.
+
+O sistema envia uma requisição HTTP para a API, aguarda a resposta e transforma os dados recebidos em um objeto simplificado do tipo `PokemonResumo`.
+
+### Tratamento de Erros
+
+O tratamento de erros foi implementado através de blocos `try/catch`.
+
+Quando um Pokémon inexistente é informado ou ocorre alguma falha na requisição, a aplicação exibe uma mensagem amigável no terminal e retorna `null`, evitando a interrupção da execução.
+
+### Métodos de Array
+
+Foram utilizados métodos de array para manipulação dos dados:
+
+* `map()` para transformar os tipos retornados pela API em uma lista de nomes.
+* `some()` para verificar se um Pokémon já existe no catálogo.
+* `filter()` para remover Pokémon pelo ID.
+* `forEach()` para exibir os Pokémon armazenados no catálogo.
+
+### Classe CatalogoPokemon
+
+A classe `CatalogoPokemon` foi criada para gerenciar o catálogo local da aplicação.
+
+Atributos:
+
+* `private pokemons: PokemonResumo[]`
+
+Métodos:
+
+* `adicionar()` – adiciona um Pokémon ao catálogo.
+* `listar()` – exibe todos os Pokémon cadastrados.
+* `remover()` – remove um Pokémon utilizando seu ID.
+
+A classe também impede o cadastro de Pokémon duplicados através da validação do ID.
+
 ## Organização do Projeto
 
 O gerenciamento das tarefas foi realizado utilizando a metodologia Kanban através do Trello.
@@ -245,8 +312,8 @@ docs: atualiza readme com instrucoes
 [x] Usei try/catch
 [x] Tratei erro de Pokémon inexistente
 [x] Transformei o retorno da API em objeto simples
-[ ] Criei catálogo local em array ou classe
-[ ] Criei função ou método para adicionar Pokémon
+[x] Criei catálogo local em array ou classe
+[x] Criei função ou método para adicionar Pokémon
 [ ] Impedi Pokémon duplicado
 [ ] Criei função ou método para listar catálogo
 [ ] Criei função ou método para remover Pokémon por ID
@@ -309,5 +376,25 @@ Saída obtida:
 Resultado esperado: ✅
 
 O sistema tratou corretamente a tentativa de busca de um Pokémon inexistente sem interromper a execução.
+
+---
+
+### Adição ao catálogo
+
+Entrada testada:
+
+```text
+Adicionar Pikachu
+```
+
+Saída obtida:
+
+```text
+[OK] pikachu adicionado ao catálogo.
+```
+
+Resultado esperado: ✅
+
+O Pokémon foi adicionado ao catálogo local.
 
 ---
