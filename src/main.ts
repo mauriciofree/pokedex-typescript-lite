@@ -32,6 +32,10 @@ async function main() {
     catalogo.adicionar(inexistente);
   }
   catalogo.listar();
+  
+  catalogo.remover(25);
+  catalogo.listar();
+  
 }
 
 main();
