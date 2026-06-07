@@ -494,3 +494,21 @@ Saída obtida:
 Resultado esperado: ✅
 
 O Pokémon foi removido corretamente do catálogo.
+
+### Remoção de Pokémon inexistente
+
+Entrada testada:
+
+```text
+Remover Pokémon ID 9999
+```
+
+Saída obtida:
+
+```text
+[AVISO] Nenhum Pokémon encontrado com esse ID.
+```
+
+Resultado esperado: ✅
+
+A aplicação verificou corretamente que o Pokémon não existia no catálogo e manteve os dados já cadastrados.
