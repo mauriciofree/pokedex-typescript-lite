@@ -318,16 +318,15 @@ docs: atualiza readme com instrucoes
 [x] Criei função ou método para listar catálogo
 [x] Criei função ou método para remover Pokémon por ID
 [x] Usei pelo menos 3 métodos de array
-[ ] Exibi mensagens claras no terminal
-[ ] Testei o fluxo no main.ts
-[ ] Atualizei o README.md
-[ ] Incluí exemplos de execução no README
-[ ] Criei quadro Kanban ou planejamento equivalente
-[ ] Fiz commits no GitHub
-[ ] Usei branches mínimas
+[x] Exibi mensagens claras no terminal
+[x] Testei o fluxo no main.ts
+[x] Atualizei o README.md
+[x] Incluí exemplos de execução no README
+[x] Criei quadro Kanban ou planejamento equivalente
+[x] Fiz commits no GitHub
+[x] Usei branches mínimas
 [ ] Enviei o link do GitHub no AVA
 [ ] Enviei o link do Kanban no AVA
-[ ] Não deixei vídeo como item obrigatório
 
 ## Testes Realizados
 
