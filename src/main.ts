@@ -10,6 +10,13 @@ async function main() {
     catalogo.adicionar(pikachu);
   }
 
+
+  const pikachuDuplicado = await buscarPokemon("pikachu");
+
+  if (pikachuDuplicado !== null) {
+    catalogo.adicionar(pikachuDuplicado);
+  }
+
   const inexistente  = await buscarPokemon("pokemon-inexistente");
   if (inexistente){
     // console.log(inexistente);
