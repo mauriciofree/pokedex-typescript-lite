@@ -284,4 +284,30 @@ Resultado esperado: ✅
 
 O Pokémon foi encontrado na PokeAPI e seus dados foram convertidos para o formato simplificado da aplicação.
 
+Todos os teste foram feitos usando o comando:
+
+```text
+npm run dev
+```
+
+---
+
+### Busca inválida
+
+Entrada testada:
+
+```text
+pokemon-inexistente
+```
+
+Saída obtida:
+
+```text
+[ERRO] Pokémon não encontrado.
+```
+
+Resultado esperado: ✅
+
+O sistema tratou corretamente a tentativa de busca de um Pokémon inexistente sem interromper a execução.
+
 ---
