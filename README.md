@@ -398,3 +398,23 @@ Resultado esperado: ✅
 O Pokémon foi adicionado ao catálogo local.
 
 ---
+
+### Prevenção de duplicidade
+
+Entrada testada:
+
+```text
+Adicionar Pikachu novamente
+```
+
+Saída obtida:
+
+```text
+[AVISO] pikachu já está no catálogo.
+```
+
+Resultado esperado: ✅
+
+A aplicação impediu o cadastro duplicado utilizando o ID do Pokémon.
+
+---
