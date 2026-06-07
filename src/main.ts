@@ -3,6 +3,8 @@ import { CatalogoPokemon } from "./models/CatalogoPokemon";
 
 async function main() {
   const catalogo = new CatalogoPokemon();
+  
+  catalogo.listar();
 
   const pikachu = await buscarPokemon("pikachu");
   if (pikachu){
