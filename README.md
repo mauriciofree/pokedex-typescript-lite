@@ -433,3 +433,26 @@ Resultado esperado: ✅
 O Pokémon cadastrado foi exibido corretamente.
 
 ---
+
+### Listagem do catálogo - 2 pokemons
+
+Obs: Antes de listar novamente, foi executada a adição de um novo pokemon.
+
+Saída obtida antes de Adicionar o novo pokemon:
+
+```text
+#25 - pikachu | Tipos: electric | Altura: 4 | Peso: 60
+```
+
+Saída obtida depois de Adicionar o novo pokemon:
+
+```text
+#25 - pikachu | Tipos: electric | Altura: 4 | Peso: 60
+#4 - charmander | Tipos: fire | Altura: 6 | Peso: 85
+```
+
+Resultado esperado: ✅
+
+Os Pokémons cadastrados foram exibidos corretamente.
+
+---
