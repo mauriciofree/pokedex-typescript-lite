@@ -476,3 +476,21 @@ Resultado esperado: ✅
 A aplicação verificou corretamente que não existem Pokémon cadastrados e exibiu uma mensagem informativa ao usuário.
 
 ---
+
+### Remoção de Pokémon
+
+Entrada testada:
+
+```text
+Remover ID 25
+```
+
+Saída obtida:
+
+```text
+[OK] Pokémon removido do catálogo.
+```
+
+Resultado esperado: ✅
+
+O Pokémon foi removido corretamente do catálogo.
