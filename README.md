@@ -314,8 +314,8 @@ docs: atualiza readme com instrucoes
 [x] Transformei o retorno da API em objeto simples
 [x] Criei catálogo local em array ou classe
 [x] Criei função ou método para adicionar Pokémon
-[ ] Impedi Pokémon duplicado
-[ ] Criei função ou método para listar catálogo
+[x] Impedi Pokémon duplicado
+[x] Criei função ou método para listar catálogo
 [ ] Criei função ou método para remover Pokémon por ID
 [ ] Usei pelo menos 3 métodos de array
 [ ] Exibi mensagens claras no terminal
@@ -416,5 +416,20 @@ Saída obtida:
 Resultado esperado: ✅
 
 A aplicação impediu o cadastro duplicado utilizando o ID do Pokémon.
+
+---
+
+
+### Listagem do catálogo - apenas 1 pokemon
+
+Saída obtida:
+
+```text
+#25 - pikachu | Tipos: electric | Altura: 4 | Peso: 60
+```
+
+Resultado esperado: ✅
+
+O Pokémon cadastrado foi exibido corretamente.
 
 ---
