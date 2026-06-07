@@ -456,3 +456,23 @@ Resultado esperado: ✅
 Os Pokémons cadastrados foram exibidos corretamente.
 
 ---
+
+### Catálogo vazio
+
+Entrada testada:
+
+```text
+Listar catálogo sem Pokémon cadastrados
+```
+
+Saída obtida:
+
+```text
+[AVISO] Catálogo vazio.
+```
+
+Resultado esperado: ✅
+
+A aplicação verificou corretamente que não existem Pokémon cadastrados e exibiu uma mensagem informativa ao usuário.
+
+---
