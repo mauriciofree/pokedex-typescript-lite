@@ -10,6 +10,13 @@ async function main() {
     catalogo.adicionar(pikachu);
   }
 
+  catalogo.listar();
+
+  const charmander = await buscarPokemon("charmander");
+  if (charmander){
+    catalogo.adicionar(charmander);
+  }
+
 
   const pikachuDuplicado = await buscarPokemon("pikachu");
 
