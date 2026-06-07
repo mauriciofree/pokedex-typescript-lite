@@ -35,7 +35,12 @@ async function main() {
   
   catalogo.remover(25);
   catalogo.listar();
+
+  catalogo.remover(9999);
+  catalogo.listar();
+
   
+
 }
 
 main();
