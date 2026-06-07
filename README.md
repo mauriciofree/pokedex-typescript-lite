@@ -325,8 +325,8 @@ docs: atualiza readme com instrucoes
 [x] Criei quadro Kanban ou planejamento equivalente
 [x] Fiz commits no GitHub
 [x] Usei branches mínimas
-[ ] Enviei o link do GitHub no AVA
-[ ] Enviei o link do Kanban no AVA
+[x] Enviei o link do GitHub no AVA
+[x] Enviei o link do Kanban no AVA
 
 ## Testes Realizados
 
